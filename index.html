@@ -55,6 +55,7 @@
                             var username = info.attributes.userName;
                             var password = info.attributes.password; // استبدلها بكلمة المرور الصحيحة
                             var code = info.attributes.code;
+                            var department = info.attributes.department;
 
 
                             // افحص هنا إذا كانت اسم المستخدم وكلمة المرور صحيحة
@@ -63,6 +64,7 @@
                                 
                                 const saveuser = localStorage.setItem('username', username);
                                 const savecode = localStorage.setItem('myCode', code);
+                                const savedepartment = localStorage.setItem('myDepartment', department);
                                 window.location.href = '/SRM.html';
                             }
                         });
